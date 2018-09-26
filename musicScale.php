@@ -14,10 +14,24 @@
 </head>
 
 <body>
-    <h2>Music Scale</h2>
+<h2>Musical Scale</h2>
     <?php
-        $musicScale = array("do", "re", "me", "fa", "so", "la", "ti", "do");
-        $outputString = "The notes for music scale are: ";
+        $musicalScale = array("do", "re", "me", "fa", "so", "la", "ti", "do");
+        $outputString = "The notes of the musical scale are: ";
+        foreach ($musicalScale as $curNote) {
+            $outputString .= " " . $curNote;
+        }
+        echo "<p>$outputString</p>";
+    ?>
+    
+    <h2>Formatted Text</h2>
+    <?php
+        $displayVariable = 9.876;
+        echo "<pre>\n";
+        echo "Unformatted text line 1. \r\n";
+        echo "Unformatted text line 2. \r\n";
+        echo "\$displayVariable = $displayVariable";
+        echo "</pre>\n";
     ?>
 </body>
 
