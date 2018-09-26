@@ -16,12 +16,14 @@
 <body>
     <h2>Passwords</h2>
     <?php
+    //Array
         $record = "jdoe:8w4dso3a39Yk2:1363:24:JohnDoe:/home/jdoe:/bin/bash:extra 1:extra 2";
         $password = array("Login Name", "Optional Encripted Password", "Numerical User Id", "Numerical Group Id", "Username of Comment Field", "User Home Directory", "Optional User Command Interpreter");
         $fieldIndex = 0;
         $extraFields = 0;
         $currentField = strtok($record, ":");
         while ($currentField != NULL) {
+            //Useage of while loop
             if ($fieldIndex < count($password)) {
                 echo "<p>The {$password[$fieldIndex]} is <em>$currentField</em></p>\n";
             } else {

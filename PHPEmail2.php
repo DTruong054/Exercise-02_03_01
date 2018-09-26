@@ -39,6 +39,7 @@
         }
 
         $sortedAddresses = sortAdresses($emailAddresses);
+        //Implode example
         $sortedAddressesList = implode(", ", $sortedAddresses);
         echo "<p>Sorted addresses: $sortedAddressesList</p>";
         function validateAddress($addresses)

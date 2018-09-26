@@ -16,11 +16,14 @@
 <body>
     <h2>Passwords</h2>
     <?php
+    //Arrays
         $record = "jdoe:8w4dso3a39Yk2:1363:24:JohnDoe:/home/jdoe:/bin/bash:extra 1:extra 2";
         $password = array("Login Name", "Optional Encripted Password", "Numerical User Id", "Numerical Group Id", "Username of Comment Field", "User Home Directory", "Optional User Command Interpreter");
         $extraFields = 0;
+        //Explode example (Expands the records after every :)
         $field = explode(":", $record);
         foreach ($field as $fieldIndex => $fieldValue) {
+            //Useage of the "fat arrow" in foreach loop
             if ($fieldIndex < count($password)) {
                 echo "<p>The {$password[$fieldIndex]} is <em>$fieldValue</em></p>\n";
             } else {

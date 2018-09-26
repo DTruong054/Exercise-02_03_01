@@ -16,6 +16,7 @@
 <body>
     <h2>Email</h2>
     <?php
+    //Array
     $emailAddresses = array("john.smith@php.test","marry.smith@php.test", "john.jones@php.invalid", "alan.smithee@test", "jsmith456@example.com", "jsmith456@test", "mjones@example", "mjones@example.com");
         function validateAddress($addresses)
         {

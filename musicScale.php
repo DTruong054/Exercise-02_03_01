@@ -16,8 +16,10 @@
 <body>
 <h2>Musical Scale</h2>
     <?php
+    //Arrays
         $musicalScale = array("do", "re", "me", "fa", "so", "la", "ti", "do");
         $outputString = "The notes of the musical scale are: ";
+        //For each structure
         foreach ($musicalScale as $curNote) {
             $outputString .= " " . $curNote;
         }
@@ -26,6 +28,7 @@
     
     <h2>Formatted Text</h2>
     <?php
+    //Echos
         $displayVariable = 9.876;
         echo "<pre>\n";
         echo "Unformatted text line 1. \r\n";
